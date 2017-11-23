@@ -14,8 +14,8 @@
               class="white--text"
             >
               <img src="../assets/vuetify.png" alt="Vuetify.js" height="200">
-              <h1 class="white--text mb-2 display-1 text-xs-center">Seed</h1>
-              <div class="subheading mb-3 text-xs-center">Your personal relationship manager</div>
+              <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
+              <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
               <v-btn
                 class="blue lighten-2 mt-5"
                 dark
@@ -37,9 +37,9 @@
           >
             <v-flex xs12 sm4 class="my-3">
               <div class="text-xs-center">
-                <h2 class="headline">Forget forgetting</h2>
+                <h2 class="headline">The best way to start developing</h2>
                 <span class="subheading">
-                  A personal, private tool to keep up with your network 
+                  Cras facilisis mi vitae nunc 
                 </span>
               </div>
             </v-flex>
@@ -52,10 +52,12 @@
                         <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
                       </v-card-text>
                       <v-card-title primary-title class="layout justify-center">
-                        <div class="headline text-xs-center">Automatic</div>
+                        <div class="headline text-xs-center">Material Design</div>
                       </v-card-title>
                       <v-card-text>
-                        Track interactions between you and another person across all platforms
+                        Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
                       </v-card-text>
                     </v-card>
                   </v-flex>
@@ -65,10 +67,12 @@
                         <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
                       </v-card-text>
                       <v-card-title primary-title class="layout justify-center">
-                        <div class="headline">Visual</div>
+                        <div class="headline">Fast development</div>
                       </v-card-title>
                       <v-card-text>
-                        Display your interactions in an easily digestible timeline.
+                        Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
                       </v-card-text>
                     </v-card>
                   </v-flex>
@@ -78,10 +82,12 @@
                         <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
                       </v-card-text>
                       <v-card-title primary-title class="layout justify-center">
-                        <div class="headline text-xs-center">Proactive</div>
+                        <div class="headline text-xs-center">Completely Open Sourced</div>
                       </v-card-title>
                       <v-card-text>
-                        Seed allows you to allocate all of your time towards growing your networks and keeping it strong.
+                        Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
                       </v-card-text>
                     </v-card>
                   </v-flex>
@@ -268,7 +274,7 @@ import ImgUpload from './ImgUpload.vue'
         miniVariant: false,
         right: true,
         rightDrawer: false,
-        title: 'Seed'
+        title: 'Vuetify.js'
       }
     },
     components:{
