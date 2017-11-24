@@ -6,8 +6,25 @@
   <v-app id="inspire">
     <v-layout row>
       <v-flex xs12 sm6 offset-sm3>
+        
+    <v-toolbar  color="white"floating dense>
+    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-title class="white--text">Title</v-toolbar-title>
+    <v-spacer></v-spacer>
+      <v-text-field prepend-icon="search" hide-details single-line></v-text-field>
+
+    <v-btn icon>
+      <v-icon>home</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon>settingsh</v-icon>
+    </v-btn>
+   
+  </v-toolbar>
+        
+        
         <v-card>
-          <v-toolbar color="cyan" dark>
+          <v-toolbar color="teal lighten-2" dark>
             <v-toolbar-side-icon></v-toolbar-side-icon>
             <v-toolbar-title>Inbox</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -29,6 +46,55 @@
                 </v-list-tile-content>
               </v-list-tile>
             </template>
+          </v-list>
+        </v-card>
+        
+        
+          <v-card>
+          <v-toolbar color="teal lighten-2" dark>
+            <v-toolbar-side-icon></v-toolbar-side-icon>
+            <v-toolbar-title>ToDos</v-toolbar-title>
+          </v-toolbar>
+          
+          <v-list two-line subheader>
+            <v-list-tile avatar v-for="item in todos" v-bind:key="item.title" @click="">
+          
+              <v-list-tile-content>
+                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                <v-list-tile-sub-title>{{ item.project }}</v-list-tile-sub-title>
+              </v-list-tile-content>
+              <v-list-tile-action>
+                <v-card>
+                   <v-menu transition="slide-y-transition">
+                    <v-btn color="teal lighten-2" slot="activator" flat >OK</v-btn>
+                    <v-list>
+                      <v-list-tile v-for="n in 3" :key="n" @click="">
+                        <v-list-tile-title v-text="'Remind me in ' + n + ' months' "></v-list-tile-title>
+                      </v-list-tile>
+                    </v-list>
+                  </v-menu>
+                   <v-menu transition="slide-y-transition">
+                    <v-btn color="teal lighten-2" slot="activator" flat >Later</v-btn>
+                    <v-list>
+                      <v-list-tile v-for="n in 3" :key="n" @click="">
+                        <v-list-tile-title v-text="'Remind me in ' + n + ' months' "></v-list-tile-title>
+                      </v-list-tile>
+                    </v-list>
+                  </v-menu>
+                   <v-menu transition="slide-y-transition">
+                    <v-btn color="teal lighten-2" slot="activator" flat >Dismiss</v-btn>
+                    <v-list>
+                      <v-list-tile v-for="n in 3" :key="n" @click="">
+                        <v-list-tile-title v-text="'Remind me in ' + n + ' months' "></v-list-tile-title>
+                      </v-list-tile>
+                    </v-list>
+                  </v-menu>
+                </v-card>
+                
+                
+              
+              </v-list-tile-action>
+            </v-list-tile>
           </v-list>
         </v-card>
       </v-flex>
@@ -86,22 +152,18 @@ import ImgUpload from './ImgUpload.vue'
         { avatar: 'https://i.imgur.com/hhUXBP8.png', title: 'Oui oui', subtitle: "<span class='grey--text text--darken-2'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have you ever been?" }
       ],
       todos: [{
-        title: 'Todo A',
+        title: 'Follow up with Hannah',
         project: 'Project A',
         done: false,
       }, {
-        title: 'Todo B',
+        title: 'Reply to reubin',
         project: 'Project B',
         done: true,
       }, {
-        title: 'Todo C',
+        title: 'Reconnect with Sam',
         project: 'Project C',
         done: false,
-      }, {
-        title: 'Todo D',
-        project: 'Project D',
-        done: false,
-      }],
+      },],
     }
   }
 }
