@@ -1,30 +1,32 @@
 <template>
   <v-app light>
-    <v-toolbar class="white">
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+    <v-toolbar class="white pa-5" height="110" >
+      <img src="../assets/greenLogo.png" alt="Vuetify.js" height="120">
+      <v-spacer></v-spacer>
+      <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
+      <v-toolbar-items class="hidden-sm-and-down pr-5">
+        <v-btn flat >What we do</v-btn>
+        <v-btn flat href = "http://seed6-imseeu.c9users.io:8080/#/email" style="font-family:Hk">Demo</v-btn>
+        
+      </v-toolbar-items>
+      
     </v-toolbar>
     <main>
       <v-content>
         <section>
-          <v-parallax src="https://i.imgur.com/4ahuik3.jpg" height="600">
+          <v-parallax src="https://i.imgur.com/T49Bbr5.jpg" height="700" jumbotron>
             <v-layout
               column
               align-center
               justify-center
               class="white--text"
             >
-              <img src="../assets/vuetify.png" alt="Vuetify.js" height="200">
-              <h1 class="white--text mb-2 display-1 text-xs-center">Seed</h1>
-              <div class="subheading mb-3 text-xs-center">Your personal relationship manager</div>
-              <v-btn
-                class="blue lighten-2 mt-5"
-                dark
-                large
-                href="/pre-made-themes"
-              >
-                Get Started
-              </v-btn>
             </v-layout>
+          </v-parallax>
+        </section>
+        
+        <section>
+          <v-parallax src="https://i.imgur.com/PUeov4q.jpg" height="700" jumbotron>
           </v-parallax>
         </section>
 
@@ -35,11 +37,11 @@
             class="my-5"
             align-center
           >
-            <v-flex xs12 sm4 class="my-3">
+            <v-flex xs12 sm4 class="my-3" style="font-family:Hk">
               <div class="text-xs-center">
-                <h2 class="headline">Forget forgetting</h2>
-                <span class="subheading">
-                  A personal, private tool to keep up with your network 
+                <h2 class="headline" style="font-family:Hk">Never miss a follup-up.</h2>
+                <span class="subheading" style="font-family:Hk">
+                  Seed is a private place for all things professional.
                 </span>
               </div>
             </v-flex>
@@ -49,39 +51,39 @@
                   <v-flex xs12 md4>
                     <v-card class="elevation-0 transparent">
                       <v-card-text class="text-xs-center">
-                        <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
+                        <v-icon x-large color="teal lighten-2" >autorenew</v-icon>
                       </v-card-text>
                       <v-card-title primary-title class="layout justify-center">
-                        <div class="headline text-xs-center">Automatic</div>
+                        <div class="headline text-xs-center" style="font-family:Hk">Personal</div>
                       </v-card-title>
-                      <v-card-text>
-                        Track interactions between you and another person across all platforms
+                      <v-card-text style="font-family:Hk">
+                        To-do-list to prompt you to engage with those that have not been contacted. Never forget anyone or anything.
                       </v-card-text>
                     </v-card>
                   </v-flex>
                   <v-flex xs12 md4>
                     <v-card class="elevation-0 transparent">
                       <v-card-text class="text-xs-center">
-                        <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                        <v-icon x-large color="teal lighten-2" >insert_photo</v-icon>
                       </v-card-text>
                       <v-card-title primary-title class="layout justify-center">
-                        <div class="headline">Visual</div>
+                        <div class="headline">Automatic</div>
                       </v-card-title>
-                      <v-card-text>
-                        Display your interactions in an easily digestible timeline.
+                      <v-card-text style="font-family:Hk">
+                        Seed tracks interactions between you and your contacts across all platforms. No work for you, all the opportunity. 
                       </v-card-text>
                     </v-card>
                   </v-flex>
                   <v-flex xs12 md4>
                     <v-card class="elevation-0 transparent">
                       <v-card-text class="text-xs-center">
-                        <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
+                        <v-icon x-large color="teal lighten-2">flash_on</v-icon>
                       </v-card-text>
                       <v-card-title primary-title class="layout justify-center">
-                        <div class="headline text-xs-center">Proactive</div>
+                        <div class="headline text-xs-center" style="font-family:Hk">Intuitive</div>
                       </v-card-title>
-                      <v-card-text>
-                        Seed allows you to allocate all of your time towards growing your networks and keeping it strong.
+                      <v-card-text style="font-family:Hk">
+                        Seed displays your interactions visually in an easy to digest timeline. No experience required to get started.
                       </v-card-text>
                     </v-card>
                   </v-flex>
@@ -91,161 +93,23 @@
           </v-layout>
         </section>
 
-        <section>
-          <v-parallax src="https://i.imgur.com/z5EXB92.jpg" height="380">
-            <v-layout column align-center justify-center>
-              <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
-              <em>Kick-start your application today</em>
-              <v-btn
-                class="blue lighten-2 mt-5"
-                dark
-                large
-                href="/pre-made-themes"
-              >
-                Get Started
-              </v-btn>
-            </v-layout>
-          </v-parallax>
-        </section>
-
-        <section>
-          <v-container grid-list-xl>
-            <v-layout row wrap justify-center class="my-5">
-              <v-flex xs12 sm4>
-                <v-card class="elevation-0 transparent">
-                  <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Company info</div>
-                  </v-card-title>
-                  <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                  </v-card-text>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 sm4 offset-sm1>
-                <v-card class="elevation-0 transparent">
-                  <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Contact us</div>
-                  </v-card-title>
-                  <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                  </v-card-text>
-                  <v-list class="transparent">
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">phone</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>777-867-5309</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">place</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>Chicago, US</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">email</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                  </v-list>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </section>
+        
         
         <v-divider></v-divider>
         
-        <section>
-          
-          
-          <v-container grid-list-xl>
-            <v-layout row wrap justify-center class="my-5">
-              <v-flex xs13 sm4>
-                
-                <v-card class="elevation-0 transparent">
-                  <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Try It</div>
-                  </v-card-title>
-                  <ImgUpload></ImgUpload>
-                </v-card>
-                
-              </v-flex>
-              
-              <v-flex xs12 sm7 offset-sm1>
-                <v-card class="elevation-0 transparent">
-                  <v-card-title primary-title class="layout justify-center">
-                  </v-card-title>
-                    
-                      <v-container fluid>
-                        <v-layout row wrap>
-                          <v-flex xs12 md8 offset-md2>
-                            <v-card>
-                              <v-toolbar color="pink" dark>
-                                <v-icon color="white">arrow_back</v-icon>
-                                <v-toolbar-title>Compose</v-toolbar-title>
-                                <v-spacer></v-spacer>
-                                <v-icon color="white">send</v-icon>
-                              </v-toolbar>
-                              <v-container fluid class="pa-0 mt-2">
-                                <v-layout wrap>
-                                  <v-flex xs2>
-                                    <v-subheader>To</v-subheader>
-                                  </v-flex>
-                                  <v-flex xs10 class="text-xs-left">
-                                    <v-chip>
-                                      recruiter@google.com
-                                    </v-chip>
-                                  </v-flex>
-                                  <v-flex xs12>
-                                    <v-divider></v-divider>
-                                    <v-text-field
-                                      label="Subject"
-                                      value="Reaching Out"
-                                      single-line
-                                      full-width
-                                      hide-details
-                                    ></v-text-field>
-                                  </v-flex>
-                                  <v-flex xs12>
-                                    <v-divider></v-divider>
-                                    <v-text-field
-                                      label="Message"
-                                      v-model="title"
-                                      counter
-                                      max="120"
-                                      full-width
-                                      multi-line
-                                      single-line
-                                    ></v-text-field>
-                                  </v-flex>
-                                </v-layout>
-                              </v-container>
-                            </v-card>
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
-                      
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-          
-        </section>
         
       </v-content>
     </main>
   </v-app>
 </template>
+
+<style type="text/css">
+  @font-face {
+    font-family: Hk;
+    src: url('../assets/fonts/hk-grotesk/HKGrotesk-Regular.otf');
+  }
+  
+</style>
 
  <script src="https://unpkg.com/vue/dist/vue.js"></script>
  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
